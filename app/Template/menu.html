@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="../../public/styles/menu.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+<style>
+    .main-template{
+        width: 100%;
+        background-color: white;
+        padding: 0;
+        height: 180px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 60px;
+
+    }
+    li{
+        margin-right: 10px;
+    }
+    .conteudo{
+        position: absolute;
+        top: 205px;
+        width: 100%;
+    }
+</style>
+<body>
+    <div class="main-template bg bg-dark text-light">
+        <ul class="list-menu">
+            <li><a class="link-menu btn btn-primary" href="http://localhost/crudcadastrodeusuarios/">Home</a></li>
+            <li><a class="link-menu btn btn-primary" href="http://localhost/crudcadastrodeusuarios/?pagina=create&metodo=create">Criar Usuário</a></li>
+        </ul>
+        <div class="conteudo">
+            {{area_dinamica}}
+        </div>
+    </div>
+</body>
+</html>

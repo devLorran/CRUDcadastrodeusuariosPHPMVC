@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuário</title>
+</head>
+<body>
+    <form method="post" action="?pagina=create&metodo=update" class="form-group container text-dark">
+        <h4>Editar usuário</h4>
+        <label>Nome</label>
+        <input type="hidden" name="id" value="{{id}}">
+        <input type="text" name="nome" id="nome" class=" form-control container" placeholder="Nome completo" value="{{nome}}">
+        <label>Nome de usuário</label>
+        <input type="text" name="user_name" id="user_name" class=" form-control container" placeholder="Nome do usuário" value="{{user_name}}">
+        <label>Senha</label>
+        <input type="password" name="senha" id="senha" class=" form-control container" placeholder="Senha" value="{{senha}}"><br>
+        <input type="submit" class="btn btn-success" value="Editar usuário"/>
+        <a href="http://localhost/crudcadastrodeusuarios/" class="btn btn-warning">Voltar</a>
+    </form>
+</body>
+</html>

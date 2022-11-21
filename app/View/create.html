@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar usuário</title>
+</head>
+<body>
+    <form action="?pagina=create&metodo=insert" method="post" class="form-group container text-dark">
+        <h4>Crie um usuário</h4>
+        <label>Nome</label>
+        <input type="text" name="nome" id="nome" class=" form-control container" placeholder="Nome completo">
+        <label>Nome de usuário</label>
+        <input type="text" name="user_name" id="user_name" class=" form-control container" placeholder="Nome do usuário">
+        <label>Senha</label>
+        <input type="password" name="senha" id="senha" class=" form-control container" placeholder="Senha"><br>
+        <button type="submit" class="btn btn-success">Criar usuário</button>
+        <a href="http://localhost/crudcadastrodeusuarios/" class="btn btn-warning">Voltar</a>
+    </form>
+</body>
+</html>
